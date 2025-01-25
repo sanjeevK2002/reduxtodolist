@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: rgb(64, 27, 45);
+  }
+  
+  .main-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    background-color: rgb(4, 25, 50);
+  }
+  
+  .main-form {
+    display: flex;
+    align-items: center;
+    background-color: rgb(73, 73, 129);
+    padding: 1rem;
+    width: 100%;
+    max-width: 500px;
+    border-radius: 8px;
+  }
+  
+  .input-label {
+    margin-right: 1rem;
+    font-size: 1rem;
+    color: azure;
+  }
+  
+  #input1 {
+    flex: 1;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 4px;
+    margin-right: 1rem;
+  }
+  
+  #input1:focus {
+    outline: 2px solid azure;
+    background-color: rgb(255, 255, 255, 0.1);
+  }
+  
+  button {
+    padding: 0.5rem 1rem;
+    background-color: rgb(28, 107, 183);
+    color: azure;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: rgb(35, 125, 204);
+  }
+  
+  button:focus {
+    outline: 2px solid azure;
+  }
+  

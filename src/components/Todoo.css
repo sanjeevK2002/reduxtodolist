@@ -1,0 +1,96 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* General container styling */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    min-height: 100vh;
+    padding: 1rem;
+  }
+  
+  /* Todos container */
+  div {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  /* List container */
+  ul {
+    list-style-type: none;
+    background: #ffffff;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+  }
+  
+  /* List items */
+  .list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+  /* Last item without border */
+  .list:last-child {
+    border-bottom: none;
+  }
+  
+  /* Todo text */
+  .todo-text {
+    font-size: 1rem;
+    color: #333;
+    flex: 1;
+    margin-right: 1rem;
+    word-break: break-word;
+  }
+  
+  /* Delete button */
+  .deletebtn {
+    background: none;
+    border: none;
+    color: #e74c3c;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: transform 0.2s ease, color 0.2s ease;
+  }
+  
+  /* Delete button hover and focus */
+  .deletebtn:hover,
+  .deletebtn:focus {
+    color: #c0392b;
+    transform: scale(1.2);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    ul {
+      padding: 0.5rem;
+    }
+  
+    .list {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .todo-text {
+      margin-bottom: 0.5rem;
+    }
+  
+    .deletebtn {
+      align-self: flex-end;
+    }
+  }
+  
